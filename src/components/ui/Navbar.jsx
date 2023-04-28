@@ -9,11 +9,14 @@ export default function Navbar() {
     <header className="w-full h-[100px] flex justify-center bg-[#1b7688bb]">
       <nav className="w-full h-full flex justify-around items-center text-white">
         <div className="text-3xl font-bold tracking-widest">
-          <a className="hover:text-orange-600 transition-all cursor-pointer">
+          <NavLink
+            to="/"
+            className="hover:text-orange-600 transition-all cursor-pointer"
+          >
             Bisum
             <span>|</span>
             <span className="text-orange-600">@</span>
-          </a>
+          </NavLink>
         </div>
         <ul className="flex gap-5">
           <li>
@@ -21,9 +24,45 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="relative inline-block">
             <NavLink to="/shop" style={activ}>
               Shop
+              <ul className="absolute none hover:block">
+                <li>
+                  <NavLink>
+                    Woman's
+                    <ul className="absolute none hover:block">
+                      <li>
+                        <NavLink>Bags</NavLink>
+                      </li>
+                      <li>
+                        <NavLink>Shoes</NavLink>
+                      </li>
+                      <li>
+                        <NavLink>Accessorize</NavLink>
+                      </li>
+                    </ul>
+                  </NavLink>
+                </li>
+              </ul>
+              <ul className="absolute none hover:block">
+                <li>
+                  <NavLink>
+                    Men's
+                    <ul className="absolute none hover:block">
+                      <li>
+                        <NavLink>Bags</NavLink>
+                      </li>
+                      <li>
+                        <NavLink>Shoes</NavLink>
+                      </li>
+                      <li>
+                        <NavLink>Accessorize</NavLink>
+                      </li>
+                    </ul>
+                  </NavLink>
+                </li>
+              </ul>
             </NavLink>
           </li>
           <li>
