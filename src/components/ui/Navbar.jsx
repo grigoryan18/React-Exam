@@ -13,7 +13,7 @@ export default function Navbar() {
             to="/"
             className="hover:text-orange-600 transition-all cursor-pointer"
           >
-            Bisum
+            H & G MODA
             <span>|</span>
             <span className="text-orange-600">@</span>
           </NavLink>
@@ -27,43 +27,37 @@ export default function Navbar() {
           <li className="relative inline-block">
             <NavLink to="/shop" style={activ}>
               Shop
-              <ul className="absolute none hover:block">
-                <li>
-                  <NavLink>
-                    Woman's
-                    <ul className="absolute none hover:block">
-                      <li>
-                        <NavLink>Bags</NavLink>
-                      </li>
-                      <li>
-                        <NavLink>Shoes</NavLink>
-                      </li>
-                      <li>
-                        <NavLink>Accessorize</NavLink>
-                      </li>
-                    </ul>
-                  </NavLink>
-                </li>
-              </ul>
-              <ul className="absolute none hover:block">
-                <li>
-                  <NavLink>
-                    Men's
-                    <ul className="absolute none hover:block">
-                      <li>
-                        <NavLink>Bags</NavLink>
-                      </li>
-                      <li>
-                        <NavLink>Shoes</NavLink>
-                      </li>
-                      <li>
-                        <NavLink>Accessorize</NavLink>
-                      </li>
-                    </ul>
-                  </NavLink>
-                </li>
-              </ul>
             </NavLink>
+            <ul className="absolute left-0 top-[30px] bg-cyan-500 none hover:block">
+              <li className=" relative">
+                <NavLink>Woman's</NavLink>
+                <ul className="absolute right-0 none hover:block">
+                  <li>
+                    <NavLink>Bags</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Shoes</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Accessorize</NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <NavLink>Men's</NavLink>
+                <ul className="absolute none hover:block">
+                  <li>
+                    <NavLink>Bags</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Shoes</NavLink>{" "}
+                  </li>
+                  <li>
+                    <NavLink>Accessorize</NavLink>{" "}
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li>
             <NavLink to="/contact" style={activ}>
