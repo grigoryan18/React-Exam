@@ -24,7 +24,7 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
-          <li className="relative inline-block">
+          <li className="relative inline-block hover:block">
             <NavLink to="/shop" style={activ}>
               Shop
             </NavLink>
