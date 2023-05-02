@@ -780,7 +780,7 @@
       "size": "S-L-M-XS",
       "material": null,
       "image": "https://cdn-images.farfetch-contents.com/18/56/26/62/18562662_40088870_1000.jpg"
-    },
+    }
   ];
 }
  
