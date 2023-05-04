@@ -1,65 +1,47 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+
 import { IconCart } from "../../icons/IconCart";
 
 export default function Navbar() {
   const activ = ({ isActive }) => ({ color: isActive ? "orange" : null });
   const navigate = useNavigate();
+
+  // bg-gradient-to-r from-orange-600 to-cyan-600
+
   return (
-    <header className="w-full h-[100px] flex justify-center bg-[#1b7688bb]">
-      <nav className="w-full h-full flex justify-around items-center text-white">
+    <header className=" header w-full h-[80px] sticky top-0 bg-purple-600  flex justify-center">
+      <nav className="w-full h-full relative flex justify-around items-center text-white">
         <div className="text-3xl font-bold tracking-widest">
           <NavLink
             to="/"
-            className="hover:text-orange-600 transition-all cursor-pointer"
+            className="hover:text-cyan-600 transition-all cursor-pointer"
           >
             H & G MODA
             <span>|</span>
-            <span className="text-orange-600">@</span>
+            <span className="text-cyan-600">@</span>
           </NavLink>
         </div>
-        <ul className="flex gap-5">
-          <li>
+        <ul className=" h-full flex bg-purple-600 gap-5 text-xl z-10">
+          <li className=" h-full flex items-center justify-center">
             <NavLink to="/" style={activ}>
               Home
             </NavLink>
           </li>
-          <li className="relative inline-block hover:block">
+          <li className=" drop_list">
             <NavLink to="/shop" style={activ}>
               Shop
             </NavLink>
-            <ul className="absolute left-0 top-[30px] bg-cyan-500 none hover:block">
-              <li className=" relative">
-                <NavLink>Woman's</NavLink>
-                <ul className="absolute right-0 none hover:block">
-                  <li>
-                    <NavLink>Bags</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Shoes</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Accessorize</NavLink>
-                  </li>
-                </ul>
+            <ul className="dropdown_menu">
+              <li className="dropdown_list">
+                <NavLink to="/shop/womens">Women's</NavLink>
               </li>
-              <li>
-                <NavLink>Men's</NavLink>
-                <ul className="absolute none hover:block">
-                  <li>
-                    <NavLink>Bags</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Shoes</NavLink>{" "}
-                  </li>
-                  <li>
-                    <NavLink>Accessorize</NavLink>{" "}
-                  </li>
-                </ul>
+              <li className="dropdown_list">
+                <NavLink to="/shop/mens">Men's</NavLink>
               </li>
             </ul>
           </li>
-          <li>
+          <li className=" h-full flex items-center justify-center">
             <NavLink to="/contact" style={activ}>
               Contact
             </NavLink>
