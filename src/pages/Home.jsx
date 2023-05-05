@@ -86,6 +86,23 @@ export default function Home() {
             RTL Demo Coming Soon.
           </p>
         </div>
+        <div className="w-full h-auto flex flex-wrap justify-around gap-9 pt-24 py-24">
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Friendly</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Responsive Desighne</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Creative</p></div>
+          <div className="w-[270px] h-[221px] 2shadow-xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Style</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Contact form</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Real Support</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Sass Avaible</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Contact</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>For You</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>For Family</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Shoes</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Parfumes</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>Dresses</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>For Animal</p></div>
+          <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-white bg-orange-600 flex justify-center items-center"><p>For Vehicles</p></div>
+        </div>
       </section>
     </>
   );
