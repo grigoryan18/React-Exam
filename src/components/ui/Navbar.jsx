@@ -7,7 +7,6 @@ export default function Navbar() {
   const activ = ({ isActive }) => ({ color: isActive ? "orange" : null });
   const navigate = useNavigate();
 
-  // bg-gradient-to-r from-orange-600 to-cyan-600
 
   return (
     <header className=" header w-full h-[80px] sticky top-0 bg-purple-600  flex justify-center">
@@ -15,11 +14,11 @@ export default function Navbar() {
         <div className="text-3xl font-bold tracking-widest">
           <NavLink
             to="/"
-            className="hover:text-cyan-600 transition-all cursor-pointer"
+            className="hover:text-orange-500 transition-all cursor-pointer"
           >
             H & G MODA
             <span>|</span>
-            <span className="text-cyan-600">@</span>
+            <span className="text-orange-500">@</span>
           </NavLink>
         </div>
         <ul className=" h-full flex bg-purple-600 gap-5 text-xl z-10">
@@ -49,7 +48,7 @@ export default function Navbar() {
         </ul>
         <div>
           <button
-            className=" flex justify-center items-center gap-3 py-3 px-8 rounded-md uppercase bg-orange-600"
+            className=" flex justify-center items-center gap-3 py-3 px-8 rounded-md uppercase bg-orange-600 hover:bg-white hover:text-orange-500 transition-all"
             onClick={() => navigate("/shop")}
           >
             <IconCart />

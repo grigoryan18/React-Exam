@@ -7,7 +7,7 @@ import { IconYoutube } from '../../icons/IconYoutube'
 
 export default function Footer() {
   return (
-    <section className='w-full h-[500px] bg-[#1b7688bb] flex justify-evenly items-center'>
+    <section className='w-full h-[500px] bg-purple-600 flex justify-evenly items-center'>
       <div className='text-white text-lg'>
         <h2 className='text-2xl pb-8 text-orange-600'>About</h2>
         <p>About Us</p>

@@ -37,15 +37,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-[103px]">
-      <div className="w-full h-[33px] ">
-        <Link
-          to="/"
-          className="px-10 p-1 text-2xl rounded-lg text-white bg-gradient-to-r from-orange-600 to-cyan-500 "
-        >
-          Home
-        </Link>
-      </div>
+    <section >
       <section className="w-full h-[500px] flex justify-evenly items-center">
         <div className="h-[200px] w-[340px] border-2 p-8 pt-10 border-[#1f9cb5bb]">
           <IconMess />

@@ -16,8 +16,7 @@ export default function DynamicShop() {
                 <img src={item?.image} alt="" className=" object-cover" />
               </div>
               <div>
-                <p>{item?.title}</p>
-                <p>{item?.categoryName}</p>
+                <p >{item?.title}</p>
               </div>
             </div>
           );
