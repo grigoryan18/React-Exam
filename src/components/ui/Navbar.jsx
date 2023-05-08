@@ -45,6 +45,11 @@ export default function Navbar() {
               Contact
             </NavLink>
           </li>
+          <li className=" h-full flex items-center justify-center">
+            <NavLink to="/cart" style={activ}>
+              Cart
+            </NavLink>
+          </li>
         </ul>
         <div>
           <button
