@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { productsDB } from "../../data/DataBase";
 
+
 const initialState = {
   shopProducts: productsDB
 }

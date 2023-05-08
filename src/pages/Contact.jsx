@@ -132,7 +132,7 @@ export default function Contact() {
         </div>
         <div>
           {isMessageSent?.isError ? (
-            <p className=" text-red-500">All input fields are required!</p>
+            <p className=" text-red-500 px-5">All input fields are required!</p>
           ) : null}
         </div>
       </form>
