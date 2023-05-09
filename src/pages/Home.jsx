@@ -1,14 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IconArrow } from "../icons/IconArrow";
-import {FaCode, FaDice, FaFont, FaSearch, FaUserFriends} from "react-icons/fa"  
-import { SiAffinitydesigner, SiBootstrap, SiGooglemessages } from "react-icons/si"
-import { BsGoogle } from "react-icons/bs"
-import { BiSupport } from "react-icons/bi"
-import { IoIosSpeedometer, IoLogoSass } from "react-icons/io"
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { SlNote } from "react-icons/sl"
-import { MdEventNote } from "react-icons/md"
+import {
+  FaCode,
+  FaDice,
+  FaFont,
+  FaSearch,
+  FaUserFriends,
+} from "react-icons/fa";
+import {
+  SiAffinitydesigner,
+  SiBootstrap,
+  SiGooglemessages,
+} from "react-icons/si";
+import { BsGoogle } from "react-icons/bs";
+import { BiSupport } from "react-icons/bi";
+import { IoIosSpeedometer, IoLogoSass } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { SlNote } from "react-icons/sl";
+import { MdEventNote } from "react-icons/md";
 
 export default function Home() {
   <shoeImages />;
@@ -26,13 +36,21 @@ export default function Home() {
             H & G MODA PAGES
           </h2>
           <div className="w-full h-auto flex justify-center items-center gap-3 pt-10">
-            <Link to="/" className="font-xl text-white">home pages</Link>
+            <Link to="/" className="font-xl text-white">
+              home pages
+            </Link>
             <p className="text-red-700">|</p>
-            <Link to="/shop" className="font-xl text-white">shop pages</Link>
+            <Link to="/shop" className="font-xl text-white">
+              shop pages
+            </Link>
             <p className="text-red-700">|</p>
-            <Link to="/about" className="font-xl text-white">about pages</Link>
+            <Link to="/cart" className="font-xl text-white">
+              cart pages
+            </Link>
             <p className="text-red-700">|</p>
-            <Link to="/contact" className="font-xl text-white">contact pages</Link>
+            <Link to="/contact" className="font-xl text-white">
+              contact pages
+            </Link>
           </div>
           <div className="w-full h-auto flex justify-center items-center pt-[70px]">
             <button className="w-[220px] h-[50px] bg-orange-700 text-white transition-all font-bold text-lg rounded-lg hover:bg-cyan-700">
@@ -98,39 +116,39 @@ export default function Home() {
         </div>
         <section className="w-full h-auto flex flex-wrap justify-around gap-9 pt-24 py-24">
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <FaUserFriends className="w-10 h-10 "/>
+            <FaUserFriends className="w-10 h-10 " />
             <p>Friendly</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5 ">
-            <SiAffinitydesigner className="w-10 h-10 ml-8"/>
+            <SiAffinitydesigner className="w-10 h-10 ml-8" />
             <p>Responsive Desighne</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <FaDice className="w-10 h-10"/>
+            <FaDice className="w-10 h-10" />
             <p>Creative</p>
           </div>
           <div className="w-[270px] h-[221px] 2shadow-xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <FaFont className="w-10 h-10"/>
+            <FaFont className="w-10 h-10" />
             <p>Icon Font</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <BsGoogle className="w-10 h-10"/>
+            <BsGoogle className="w-10 h-10" />
             <p>Google Font</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <SiGooglemessages className="w-10 h-10"/>
+            <SiGooglemessages className="w-10 h-10" />
             <p>Contact Form</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <FaCode className="w-10 h-10"/>
+            <FaCode className="w-10 h-10" />
             <p>Clean Markup</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <BiSupport className=" w-10 h-10"/>
+            <BiSupport className=" w-10 h-10" />
             <p>Real Support</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <IoLogoSass className="w-10 h-10"/>
+            <IoLogoSass className="w-10 h-10" />
             <p>Sass Available</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
@@ -138,23 +156,23 @@ export default function Home() {
             <p>Bootstrap Comfortable</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <IoIosSpeedometer className="w-10 h-10 ml-8"/>
+            <IoIosSpeedometer className="w-10 h-10 ml-8" />
             <p>Fast Loading Speed</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <FaSearch className="w-10 h-10"/>
+            <FaSearch className="w-10 h-10" />
             <p>SEO Optimized</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <GiHamburgerMenu className="w-10 h-10 ml-8"/>
+            <GiHamburgerMenu className="w-10 h-10 ml-8" />
             <p>Responsive mega menu</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <SlNote className="w-10 h-10 ml-8"/>
+            <SlNote className="w-10 h-10 ml-8" />
             <p>Easy Customizable</p>
           </div>
           <div className="w-[270px] h-[221px] shadow-2xl text-2xl font-bold text-cyan-600 bg-slate-200 flex justify-center items-center gap-5">
-            <MdEventNote className="w-10 h-10 ml-8"/>
+            <MdEventNote className="w-10 h-10 ml-8" />
             <p>Detailed documentation</p>
           </div>
         </section>

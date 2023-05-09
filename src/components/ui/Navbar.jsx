@@ -7,7 +7,6 @@ export default function Navbar() {
   const activ = ({ isActive }) => ({ color: isActive ? "orange" : null });
   const navigate = useNavigate();
 
-
   return (
     <header className=" header w-full h-[80px] sticky top-0 bg-purple-600  flex justify-center">
       <nav className="w-full h-full relative flex justify-around items-center text-white">
@@ -45,8 +44,8 @@ export default function Navbar() {
               Contact
             </NavLink>
           </li>
-          <li className=" h-full flex items-center justify-center">
-            <NavLink to="/cart" style={activ}>
+          <li className=" h-full flex  items-center justify-center">
+            <NavLink to="/cart" style={activ} >
               Cart
             </NavLink>
           </li>
@@ -54,7 +53,7 @@ export default function Navbar() {
         <div>
           <button
             className=" flex justify-center items-center gap-3 py-3 px-8 rounded-md uppercase bg-orange-600 hover:bg-white hover:text-orange-500 transition-all"
-            onClick={() => navigate("/shop")}
+            onClick={() => navigate("/cart ")}
           >
             <IconCart />
             Purchase now

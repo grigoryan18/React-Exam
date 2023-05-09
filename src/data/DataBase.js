@@ -2,7 +2,7 @@ export const productsDB = [
   {
     id: 1,
     categoryName: "Men's Shoes",
-    category: "mens",
+    category: "mens" || "Men's Shoes",
     title: "Eco-Consious",
     price: 849,
     color: "Black/Grey/Sali",

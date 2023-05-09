@@ -25,7 +25,7 @@ export default function Contact() {
     const { fullName, email, subject, phoneNumber, message } = inputVal;
     if (fullName.length > 7 && email && subject && phoneNumber && message) {
       setIsMessageSent({ isSuccess: true, isError: false });
-      setTimeout(() => setIsMessageSent({isSuccess: false}), 2000);
+      setTimeout(() => setIsMessageSent({ isSuccess: false }), 2000);
       setInputVal(initialInpuVal);
     } else {
       setIsMessageSent({ isError: true });
@@ -37,7 +37,7 @@ export default function Contact() {
   };
 
   return (
-    <section >
+    <section>
       <section className="w-full h-[500px] flex justify-evenly items-center">
         <div className="h-[200px] w-[340px] border-2 p-8 pt-10 border-[#1f9cb5bb]">
           <IconMess />
