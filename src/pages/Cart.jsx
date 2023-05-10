@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CartProduct from "../components/CartProduct";
 import MainContainer from "../components/ui/MainContainer";
+import { clearCartItem } from "../redux/fetures/cart-slice";
 
 export default function Cart() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ export default function Cart() {
 
   return (
     <MainContainer>
-    <div className=" w-full px-[120px] flex items-center flex-col gap-10">
+    <div className=" w-full h-[500px] px-[120px] flex items-center flex-col gap-10">
       {cartItems?.length ? (
         <>
           <div
@@ -33,8 +34,7 @@ export default function Cart() {
             </div>
             <div className="flex items-center justify-end">
               <p className="text-lg">
-                {" "}
-                Total price: {cartTotal?.toLocalString()}
+                Total price: {cartTotal?.toLocaleString()}
                 <span className="text-orange-600 font-medium">$</span>
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function Cart() {
         </>
       ) : (
         <div>
-          <p className="text-4xl h-[500px] text-orange-600 mt-[200px] "> No Cart Items</p>
+          <p className="text-4xl h-full text-orange-600 mt-[200px] "> No Cart Items</p>
         </div>
       )}
     </div>

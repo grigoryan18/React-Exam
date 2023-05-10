@@ -22,7 +22,7 @@ export default memo(function CartProduct({ item }) {
       animate={{ opacity: 1 }}
     >
       <div className=" w-[80px] h-[80px] overflow-hidden">
-        <img src={item?.thumbnail} className=" object-cover" alt="" />
+        <img src={item?.image} className=" object-cover" alt="" />
       </div>
       <div>
         <p className=" text-lg">{item?.title}</p>

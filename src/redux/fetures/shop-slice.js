@@ -3,14 +3,19 @@ import { productsDB } from "../../data/DataBase";
 
 
 const initialState = {
-  shopProducts: productsDB
+  shopProducts: productsDB,
+  uniqueCategories: []
 }
 
 const shopSlice = createSlice({
   name: "shop",
   initialState,
-  reducers: {}
+  reducers: {
+    getUniqueCategories: (state, {payload}) => {
+      state.uniqueCategories = [...new Set(productsDB.map(item => item.categoryName))];
+    }
+  }
 })
 
-export const {} = shopSlice.actions;
+export const {getUniqueCategories} = shopSlice.actions;
 export default shopSlice.reducer;

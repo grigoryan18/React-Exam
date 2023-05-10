@@ -1,44 +1,63 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Product from "../components/Product";
-import { productsDB } from "../data/DataBase"
+import { getUniqueCategories } from "../redux/fetures/shop-slice";
 
 export default function Shop() {
-  const { shopProducts } = useSelector((state) => state.shop);
-  
-  const [categoryName, setCategoryName] = useState(null)
+  const dispatch = useDispatch();
+  const { shopProducts, uniqueCategories } = useSelector((state) => state.shop);
+  const {cartCount} = useSelector(state => state.cart);
+  const [categoryCheck, setCategoryCheck] = useState([]);
 
-  const filtered = categoryName ? productsDB.filter(product => product.categoryName === categoryName) : productsDB
+  const handleChange = (e) => {
+    const {value, checked} = e.target;
+    checked ? setCategoryCheck(prev => [...prev, value]) : setCategoryCheck(categoryCheck?.filter(item => item !== value));
+  }
+
+  useEffect(() => {
+    dispatch(getUniqueCategories())
+  }, [dispatch])
 
   return (
-    <div className=" w-full h-full flex justify-around">
-      <div className=" w-[300px] h-[500px] border-2 rounded-md px-10 mt-10 border-purple-600">
-        <Link to="/cart">
+    <div className=" w-full h-full grid grid-cols-[1fr_4fr] py-10 gap-8 px-10">
+      <div className=" h-[500px] flex items-start flex-col border-2 rounded-md px-10 border-purple-600">
+        <Link to="/cart" className=" relative flex items-center">
           <FaShoppingCart className="w-10 h-10 mt-5 text-purple-600" />
+          <div className=" w-5 h-5 rounded-full flex items-center justify-center absolute top-4 -right-3 transition-all duration-150 bg-red-500" style={{opacity : cartCount ? "1" : "0"}}>
+            <p className=" text-white text-[12px]">{cartCount}</p>
+          </div>
         </Link>
-        <p className="flex flex-col text-2xl text-purple-600 mt-3">
+        <div className="flex flex-col text-2xl text-purple-600 mt-3">
           CATEGORY
-          <Link to="/shop/womens" className="text-xl text-orange-600 px-3">
+          <Link to="/shop/womens" className="text-xl text-orange-600 px-3 ">
             Women's
           </Link>
           <Link to="/shop/mens" className="text-xl text-orange-600 px-3">
             Men's
           </Link>
-        </p>
-        <p className="uppercase pt-3 text-2xl text-purple-600 flex flex-col">
-          assortment
-          <p>{filtered.map(product => (
-            <div key={product.id}>
-              <p>{product.categoryName}</p>
-            </div>
-          ))}
-            </p>
-        </p>
+        </div>
+        <div className="uppercase pt-3 text-2xl text-purple-600 flex flex-col">
+          <div>
+            <p>Assortment</p>
+          </div>
+          <div>
+            {
+              uniqueCategories?.map((category, index) => {
+                return (
+                  <div key={index}>
+                    <input type="checkbox" value={category} id={category} onChange={handleChange} className=" accent-orange-500 cursor-pointer"/>
+                    <label htmlFor={category} className="text-base font-medium cursor-pointer text-orange-600 px-2">{category}</label>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
       </div>
-      <div className=" w-[1000px] flex flex-wrap gap-5">
-        {shopProducts?.map((item) => {
+      <div className=" grid grid-cols-3 gap-5">
+        {shopProducts?.filter(item => categoryCheck?.length ? item?.categoryName === categoryCheck?.find(categoryItem => categoryItem === item?.categoryName) : item)?.map((item) => {
           return <Product key={item?.id} item={item} />;
         })}
       </div>

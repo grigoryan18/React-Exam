@@ -235,7 +235,7 @@ export const productsDB = [
   },
   {
     id: 19,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Chuck Taylor",
     price: 649,
@@ -248,7 +248,7 @@ export const productsDB = [
   },
   {
     id: 20,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Sneaker",
     price: 699,
@@ -261,7 +261,7 @@ export const productsDB = [
   },
   {
     id: 21,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Atwood Deluxe",
     price: 699,
@@ -274,7 +274,7 @@ export const productsDB = [
   },
   {
     id: 22,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Ward Low",
     price: 799,
@@ -287,7 +287,7 @@ export const productsDB = [
   },
   {
     id: 23,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Asher",
     price: 649,
@@ -300,7 +300,7 @@ export const productsDB = [
   },
   {
     id: 24,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Ward",
     price: 699,
@@ -313,7 +313,7 @@ export const productsDB = [
   },
   {
     id: 25,
-    categoryName: "Man's Shoes",
+    categoryName: "Men's Shoes",
     category: "mens",
     title: "Range",
     price: 749,
@@ -898,7 +898,7 @@ export const productsDB = [
   },
   {
     id: 70,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Trousers",
     price: 1416,
@@ -911,7 +911,7 @@ export const productsDB = [
   },
   {
     id: 71,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Trousers",
     price: 813,
@@ -924,7 +924,7 @@ export const productsDB = [
   },
   {
     id: 72,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Trousers",
     price: 227,
@@ -937,7 +937,7 @@ export const productsDB = [
   },
   {
     id: 73,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Trousers",
     price: 386,
@@ -950,7 +950,7 @@ export const productsDB = [
   },
   {
     id: 74,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Trousers",
     price: 421,
@@ -963,7 +963,7 @@ export const productsDB = [
   },
   {
     id: 75,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Dress",
     price: 1320,
@@ -976,7 +976,7 @@ export const productsDB = [
   },
   {
     id: 76,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Dress",
     price: 1885,
@@ -989,7 +989,7 @@ export const productsDB = [
   },
   {
     id: 77,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Dress",
     price: 2260,
@@ -1002,7 +1002,7 @@ export const productsDB = [
   },
   {
     id: 78,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Dress",
     price: 2186,
@@ -1015,7 +1015,7 @@ export const productsDB = [
   },
   {
     id: 79,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Dress",
     price: 2082,
@@ -1028,7 +1028,7 @@ export const productsDB = [
   },
   {
     id: 80,
-    categoryName: "Woman's Clothes",
+    categoryName: "Women's Clothes",
     category: "womens",
     title: "Dress",
     price: 3243,
